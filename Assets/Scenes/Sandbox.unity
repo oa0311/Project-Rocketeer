@@ -468,9 +468,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 5398158653457321850, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
-      propertyPath: m_Drag
-      value: 0.6
+    - target: {fileID: 4169889798283864993, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
