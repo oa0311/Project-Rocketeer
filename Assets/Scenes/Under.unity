@@ -545,6 +545,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 5743142843586924884, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: crashSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: f1c9966c2b7cbc14790a9dbfd70487a9, type: 3}
+    - target: {fileID: 5743142843586924884, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: finishSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: b9dd401f28b39ef46879dcf6f91accc3, type: 3}
+    - target: {fileID: 6374121852349081936, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: rocketBoost
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c4e3e53fb181a34baa0e667ab2ef0b2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
 --- !u!1001 &5932190059935883935

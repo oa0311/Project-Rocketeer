@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    // PARAMETER - for turning, typically set in the editor
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float mainRotation = 100f;
+    [SerializeField] AudioClip rocketBoost;
+    
+    // CACHE - e.g. references for readability or speed
     Rigidbody rigid;
     AudioSource audioSource;
+    
+    
+    // STATE - private instance (member) variables
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +38,7 @@ public class Movement : MonoBehaviour
             
             if(!audioSource.isPlaying)
             {
-                audioSource.Play();
+                audioSource.PlayOneShot(rocketBoost);
             }
             
         }
