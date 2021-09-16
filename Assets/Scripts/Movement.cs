@@ -8,6 +8,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float mainRotation = 100f;
     [SerializeField] AudioClip rocketBoost;
+
+    [SerializeField] ParticleSystem centralBoosterParticles;
+    [SerializeField] ParticleSystem leftBoosterParticles;
+    [SerializeField] ParticleSystem rightBoosterParticles;
     
     // CACHE - e.g. references for readability or speed
     Rigidbody rigid;
@@ -30,6 +34,7 @@ public class Movement : MonoBehaviour
         ProcessRotation();
     }
 
+    //This is the propulsion method for the rocket
     void ProcessThrust()
     {
         if (Input.GetKey(KeyCode.Space))
@@ -40,24 +45,43 @@ public class Movement : MonoBehaviour
             {
                 audioSource.PlayOneShot(rocketBoost);
             }
+            if(!centralBoosterParticles.isPlaying)
+            {
+                centralBoosterParticles.Play();
+            }
             
         }
         else 
         {
             audioSource.Stop();
+            centralBoosterParticles.Stop();
         }
     }
 
+    //This is the method to rotate the rocket
     void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
             ApplyRotation(mainRotation);
+            if (!rightBoosterParticles.isPlaying)
+            {
+                rightBoosterParticles.Play();
+            }
         }
         else if (Input.GetKey(KeyCode.D))
         {
             ApplyRotation(-mainRotation);
+            if (!leftBoosterParticles.isPlaying)
+            {
+                leftBoosterParticles.Play();
+            }
         }
+            else 
+            {
+                rightBoosterParticles.Stop();
+                leftBoosterParticles.Stop();
+            }
     }
 
     private void ApplyRotation(float rotationThisFrame)

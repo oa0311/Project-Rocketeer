@@ -184,6 +184,11 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!198 &506416856 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1435507015961471196, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+  m_PrefabInstance: {fileID: 4169889798283864991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +365,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!198 &1228323463 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7517050161650312094, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+  m_PrefabInstance: {fileID: 4169889798283864991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1445224878 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4420144290653471501, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+  m_PrefabInstance: {fileID: 4169889798283864991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &747418201895128497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -495,7 +510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4169889797733553328, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: 5.58
       objectReference: {fileID: 0}
     - target: {fileID: 4169889797733553328, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
       propertyPath: m_LocalPosition.z
@@ -532,6 +547,26 @@ PrefabInstance:
     - target: {fileID: 4169889797733553332, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374121852349081936, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: leftBoosterParticles
+      value: 
+      objectReference: {fileID: 1445224878}
+    - target: {fileID: 6374121852349081936, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: rightBoosterParticles
+      value: 
+      objectReference: {fileID: 506416856}
+    - target: {fileID: 6374121852349081936, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: centralBoosterParticles
+      value: 
+      objectReference: {fileID: 1228323463}
+    - target: {fileID: 7710069598136216022, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7710069598136216022, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77beaa39a5d63914a84e1007de2b3757, type: 3}
